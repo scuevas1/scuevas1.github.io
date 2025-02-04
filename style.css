@@ -28,20 +28,29 @@ h2 {
     color: #abebf2;
 }
 
+.introduction {
+    padding: 15px;
+    border-radius: 5px;
+    color: #ffdab9;  
+    text-align: left;
+}
+
+.education {
+    padding: 15px;
+    border-radius: 5px;
+    color: #ffdab9;  
+    text-align: left;
+}
 
 p {
     font-size: 1.2em;
-    line-height: 1.6;
-    text-align: left;
-    color: #ffdab9; 
+    line-height: 1.5;
 }
 
 ul {
-    text-align: left;
     padding-left: 40px;
     font-size: 1.2em;
-    line-height: 1.6;
-    color: #ffdab9;
+    line-height: 1.5;
 }
 
 ul li {
