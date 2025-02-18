@@ -3,11 +3,11 @@
 #flex-section1 ul {
     display: flex; 
     justify-content: space-around; 
-    align-items: center;
-    list-style: none;
+    align-items: center; /*makes the items align towards the center*/
+    list-style: none; /*takes out the default bullet points*/
     padding: 0;
-	padding-right: 20px;
-	padding-left: 20px;
+	padding-right: 20px; /*adds the space on the right*/
+	padding-left: 20px; /*adds the space on the left*/
     margin: 0;
 }
 
