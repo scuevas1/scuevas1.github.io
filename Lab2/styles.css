@@ -26,19 +26,19 @@
 }
 
 #flex-section2 li {
-	flex: 1;
+	flex: 1; /*making each item take the same amount of space*/
 }
 
 #flex-section2 .item1 {
-
+	order: 1;
 }
 
 #flex-section2 .item2 {
-
+	order: 3;
 }
 
 #flex-section2 .item3 {
-
+	order: 2;
 }
 
 /* end Flexbox Part 2 */
