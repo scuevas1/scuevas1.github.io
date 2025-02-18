@@ -57,6 +57,7 @@
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	flex-wrap: wrap; /* wrapping the items around making sure they fit*/
 }
 
 /* end Flexbox Part 3 */
