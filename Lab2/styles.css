@@ -95,11 +95,13 @@
 /* Grid Part 3 */
 
 #grid-section3 .grid {
-
+	display: grid;
+	gap: 10px;
 }
 
 #grid-section3 .box1 {
-
+	grid-column: 1/4;
+	grid-row: 1/4;
 }
 
 #grid-section3 .box2 {
