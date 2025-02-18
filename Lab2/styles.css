@@ -17,7 +17,12 @@
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
-
+	display: flex;
+	padding: 0;
+	margin: 0;
+	justify-content: space-between;
+	list-style: none; /*takes out the default bullet points*/
+	align-items: stretch; /*this makes sure that the items are evenly spread out*/
 }
 
 #flex-section2 li {
