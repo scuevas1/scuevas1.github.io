@@ -26,7 +26,7 @@
 }
 
 #flex-section2 li {
-
+	flex: 1;
 }
 
 #flex-section2 .item1 {
