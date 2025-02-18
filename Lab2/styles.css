@@ -66,6 +66,8 @@
 /* Grid Part 1 */
 
 #grid-section1 .grid {
+	display: grid;
+    grid-auto-rows: 100px;        
 
 }
 
