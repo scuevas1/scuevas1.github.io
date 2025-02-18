@@ -78,7 +78,8 @@
 /* Grid Part 2 */
 
 #grid-section2 .gridboxblue {
-
+	grid-column: 1/4;
+	grid-row: 2/4;
 }
 
 #grid-section2 .gridboxred {
