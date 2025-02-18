@@ -97,6 +97,8 @@
 #grid-section3 .grid {
     display: grid;
     gap: 10px; 
+	grid-template-columns: 2fr 1fr; /*this makes the first column twice as wide as the second one*/
+	grid-template-rows: 100px 150px 100px;
 }
 
 #grid-section3 .box1 {
