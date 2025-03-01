@@ -6,7 +6,8 @@ function minMaxAverage(numbers) {
     let min = Math.min(...numbers);
     let max = Math.max(...numbers);
     let total = numbers.length;
-
+    let avg = numbers.reduce((sum, num) => sum + num, 0) / total;
+    
 }
 
 //Exercise #2
