@@ -21,6 +21,9 @@ function countVowels(word) {
     console.log(`${word}: ${count} vowels`);
 }
 
+countVowels("Winter");
+countVowels("Paradise");
+countVowels("Basketball");
 
 //Exercise #3
 
