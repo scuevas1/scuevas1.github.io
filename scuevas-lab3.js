@@ -15,6 +15,10 @@ minMaxAverage([1, 5, 3, 5, 10, 12, 8, 6]);
 minMaxAverage([17, 15, 35, 28, 11, 4]);
 
 //Exercise #2
+function countVowels(word) {
+    
+}
+
 
 //Exercise #3
 
