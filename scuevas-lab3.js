@@ -3,7 +3,8 @@
 
 //Exercise #1
 function minMaxAverage(numbers) {
-
+    let min = Math.min(...numbers);
+    let max = Math.max(...numbers);
 }
 
 //Exercise #2
@@ -11,3 +12,4 @@ function minMaxAverage(numbers) {
 //Exercise #3
 
 //Exercise #4
+
