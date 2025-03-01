@@ -17,6 +17,7 @@ minMaxAverage([17, 15, 35, 28, 11, 4]);
 //Exercise #2
 function countVowels(word) {
     let vowels = "aeiou";
+    let count = [...word].filter(letter => vowels.includes(letter)).length;
 }
 
 
