@@ -18,6 +18,7 @@ minMaxAverage([17, 15, 35, 28, 11, 4]);
 function countVowels(word) {
     let vowels = "aeiou";
     let count = [...word].filter(letter => vowels.includes(letter)).length;
+    console.log(`${word}: ${count} vowels`);
 }
 
 
