@@ -2,6 +2,9 @@
 // ITMD 441-02 Undergraduate Student
 
 //Exercise #1
+function minMaxAverage(numbers) {
+
+}
 
 //Exercise #2
 
