@@ -5,6 +5,8 @@
 function minMaxAverage(numbers) {
     let min = Math.min(...numbers);
     let max = Math.max(...numbers);
+    let total = numbers.length;
+
 }
 
 //Exercise #2
