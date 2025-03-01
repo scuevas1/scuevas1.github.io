@@ -1,3 +1,6 @@
+//Suheily Cueva
+// ITMD 441-02 Undergraduate Student
+
 //Exercise #1
 
 //Exercise #2
