@@ -34,5 +34,8 @@ function sortNumbers(numbers){
 sortNumbers([9, 4, 6, 2]);
 sortNumbers([13, 7, 2, 19, 11]);
 sortNumbers([37, 30, 41, 100, 15]);
-//Exercise #4
 
+//Exercise #4
+function celsiusToFahrenheit(celsius) {
+   
+}
