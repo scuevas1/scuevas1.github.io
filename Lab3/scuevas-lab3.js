@@ -26,6 +26,8 @@ countVowels("Paradise");
 countVowels("Basketball");
 
 //Exercise #3
-
+function sortNumbers(numbers){
+    
+}
 //Exercise #4
 
