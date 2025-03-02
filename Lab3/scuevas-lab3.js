@@ -37,5 +37,5 @@ sortNumbers([37, 30, 41, 100, 15]);
 
 //Exercise #4
 function celsiusToFahrenheit(celsius) {
-   
+   let temp = Number(celsius);
 }
