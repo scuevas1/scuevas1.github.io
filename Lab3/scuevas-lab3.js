@@ -16,7 +16,7 @@ minMaxAverage([17, 15, 35, 28, 11, 4]);
 
 //Exercise #2
 function countVowels(word) {
-    let vowels = "aeiou";/
+    let vowels = "aeiou";
     let count = [...word].filter(letter => vowels.includes(letter)).length;
     console.log(`${word}: ${count} vowels`);
 }
@@ -39,4 +39,6 @@ sortNumbers([37, 30, 41, 100, 15]);
 function celsiusToFahrenheit(celsius) {
    let temp = Number(celsius);
    let fahrenheit = (temp * 9/5) + 32;
+   console.log(`${temp.toFixed(1)} Celsius = ${fahrenheit.toFixed(1)} Fahrenheit`);
 }
+ 
