@@ -30,5 +30,9 @@ function sortNumbers(numbers){
     let sorted = numbers.slice().sort((a, b) => a - b);
     console.log(`Original Array: ${numbers} output Sorted Array: ${sortedArray}`);
 }
+
+sortNumbers([9, 4, 6, 2]);
+sortNumbers([13, 7, 2, 19, 11]);
+sortNumbers([37, 30, 41, 100, 15]);
 //Exercise #4
 
