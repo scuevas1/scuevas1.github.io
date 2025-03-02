@@ -42,3 +42,6 @@ function celsiusToFahrenheit(celsius) {
    console.log(`${temp.toFixed(1)} Celsius = ${fahrenheit.toFixed(1)} Fahrenheit`);
 }
  
+celsiusToFahrenheit(30);    
+celsiusToFahrenheit(54);
+celsiusToFahrenheit(12);
