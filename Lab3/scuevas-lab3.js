@@ -28,6 +28,7 @@ countVowels("Basketball");
 //Exercise #3
 function sortNumbers(numbers){
     let sorted = numbers.slice().sort((a, b) => a - b);
+    console.log(`Original Array: ${numbers} output Sorted Array: ${sortedArray}`);
 }
 //Exercise #4
 
