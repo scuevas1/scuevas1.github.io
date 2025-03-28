@@ -42,6 +42,18 @@
         }
     }
 
+    function updateCenterNav() {
+        const headings = document.querySelectorAll('nav');
+    
+        headings.forEach(heading => {
+            const text = heading.textContent.trim();
+            if (["Services", "Solutions", "Contact"].includes(text)) {
+                heading.style.textAlign = "center";
+            }
+        });
+    }
+
     updateHero();
     updateNavBarColor();
+    updateCenterNav();
 })();
