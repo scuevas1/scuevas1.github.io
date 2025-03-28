@@ -71,9 +71,20 @@
         });
     }
 
+    function updateSolutionsLayout() {
+        const container = document.querySelector('div[data-section="product_cards"]');
+        if (container) {
+            container.classList.remove('grid-cols-1', 'md:grid-cols-2');
+    
+            container.style.display = 'grid';
+            container.style.gridTemplateColumns = 'repeat(4, 1fr)';
+        }
+    }
+
     updateHero();
     updateNavBarColor();
     updateCenterNav();
     updateServiceIcons();
     updateDigitalMarketingIcon();
+    updateSolutionsLayout();
 })();
