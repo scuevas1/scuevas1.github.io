@@ -61,8 +61,11 @@
     }
 
     function updateDigitalMarketingIcon() {
+        //this selects all of the icons in the services section
         document.querySelectorAll('.material-symbols-outlined').forEach(icon => {
+            //looks for the element that is called "digital marketing"
             if (icon.parentElement.textContent.toLowerCase().includes('digital marketing')) {
+                //then changes the icon
                 icon.textContent = 'ads_click';
             }
         });
