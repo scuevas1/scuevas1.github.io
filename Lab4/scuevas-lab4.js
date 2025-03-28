@@ -6,5 +6,8 @@
     function updateHero(){
         //changes the meain headline
         document.querySelector('#hero h1').textContent = "Uplift Your Brand with Stellar Marketing";
+        //changes the line of text below the hero headline.
+        //making the words 'thrive' and 'excel' italic and bold
+        document.querySelector('#hero p').innerHTML = "Utilize cutting-edge strategies from Stellar Marketing to help your business <strong><em>thrive</em></strong> and <strong><em>excel</em></strong>.";
     }
 })();
