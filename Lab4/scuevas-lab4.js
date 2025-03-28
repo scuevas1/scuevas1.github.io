@@ -60,8 +60,17 @@
             .forEach(icon => icon.style.color = '#47C714');
     }
 
+    function updateDigitalMarketingIcon() {
+        document.querySelectorAll('.material-symbols-outlined').forEach(icon => {
+            if (icon.parentElement.textContent.toLowerCase().includes('digital marketing')) {
+                icon.textContent = 'ads_click';
+            }
+        });
+    }
+
     updateHero();
     updateNavBarColor();
     updateCenterNav();
     updateServiceIcons();
+    updateDigitalMarketingIcon();
 })();
