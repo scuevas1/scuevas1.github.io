@@ -22,13 +22,14 @@
         const nav = document.querySelector('header');
         const footer = document.querySelector('footer');
 
+        //if nav and footer exist the program will continue
         if (nav && footer) {
+            //it will grab the color of the footer background
             const footerBg = getComputedStyle(footer).backgroundColor;
+            //then change the nav background color to the same as the footer. 
             nav.style.backgroundColor = footerBg;
         }
     }
-
-
 
     updateHero();
     updateNavBarColor();
