@@ -22,10 +22,14 @@
         const nav = document.querySelector('header');
         const footer = document.querySelector('footer');
 
+        if (nav && footer) {
+            const footerBg = getComputedStyle(footer).backgroundColor;
+            nav.style.backgroundColor = footerBg;
+        }
     }
 
 
 
     updateHero();
-
+    updateNavBarColor();
 })();
