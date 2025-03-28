@@ -10,11 +10,22 @@
         //making the words 'thrive' and 'excel' italic and bold
         document.querySelector('#hero p').innerHTML = "Utilize cutting-edge strategies from Stellar Marketing to help your business <strong><em>thrive</em></strong> and <strong><em>excel</em></strong>.";
 
+        //selects the first section which is the hero section where the main background image is located.
         const mainBackgroundImage = document.querySelector('section');
+        //if the background imae is real it will change to this new link.
         if (mainBackgroundImage) {
             mainBackgroundImage.style.backgroundImage = "url('https://picsum.photos/id/683/1280/720')";
         }
     }
 
+    function updateNavBarColor() {
+        const nav = document.querySelector('header');
+        const footer = document.querySelector('footer');
+
+    }
+
+
+
     updateHero();
+
 })();
