@@ -16,6 +16,17 @@
         if (mainBackgroundImage) {
             mainBackgroundImage.style.backgroundImage = "url('https://picsum.photos/id/683/1280/720')";
         }
+
+        //removes the get started button
+        const links = document.querySelectorAll('a');
+        //this checks all the <a> elements to find the one that says "get started"
+        //then it removes it
+        links.forEach(link => {
+            if (link.textContent.trim() === "Get Started") {
+                link.remove();
+            }
+        });
+
     }
 
     function updateNavBarColor() {
