@@ -53,7 +53,15 @@
         });
     }
 
+    function updateServiceIcons() {
+    //this selects all of the icons in the service section.
+        document.querySelectorAll('.material-symbols-outlined')
+        //sets the icons as this light green color.
+            .forEach(icon => icon.style.color = '#47C714');
+    }
+
     updateHero();
     updateNavBarColor();
     updateCenterNav();
+    updateServiceIcons();
 })();
