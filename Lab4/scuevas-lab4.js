@@ -84,10 +84,21 @@
         }
     }
 
+    function updateMusiciansImage() {
+        const images = document.querySelectorAll('div[data-section="product_cards"] img');
+    
+        images.forEach(img => {
+            if (img.alt.trim().toLowerCase() === "musicians") {
+                img.src = "https://picsum.photos/id/453/400/300";
+            }
+        });
+    }
+
     updateHero();
     updateNavBarColor();
     updateCenterNav();
     updateServiceIcons();
     updateDigitalMarketingIcon();
     updateSolutionsLayout();
+    updateMusiciansImage();
 })();
