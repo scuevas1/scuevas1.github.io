@@ -85,9 +85,12 @@
     }
 
     function updateMusiciansImage() {
+        //selects all of the image elements inside the product_cards section
         const images = document.querySelectorAll('div[data-section="product_cards"] img');
     
         images.forEach(img => {
+            //looks for the image that says Musicians
+            //then changes the photo
             if (img.alt.trim().toLowerCase() === "musicians") {
                 img.src = "https://picsum.photos/id/453/400/300";
             }
