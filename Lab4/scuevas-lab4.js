@@ -72,11 +72,14 @@
     }
 
     function updateSolutionsLayout() {
+        //this selects the container that holds the tiles in the specialized marketing solution
         const container = document.querySelector('div[data-section="product_cards"]');
         if (container) {
+            //removes the code that limited it to 1 or 2 columns
             container.classList.remove('grid-cols-1', 'md:grid-cols-2');
-    
+            //makes sure its a grid
             container.style.display = 'grid';
+            //makes sure that its a column of 4
             container.style.gridTemplateColumns = 'repeat(4, 1fr)';
         }
     }
