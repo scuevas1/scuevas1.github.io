@@ -28,3 +28,11 @@ h1 {
   margin-bottom: 20px;
   text-align: center;
 }
+
+/**adding color and spacing for the labels above each input**/
+label {
+  display: block;
+  margin: 12px 0 6px; /**this gives the space around the label**/
+  font-weight: bold;
+  color: #2b4b37; 
+}
