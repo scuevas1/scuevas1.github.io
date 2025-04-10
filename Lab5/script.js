@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const convertedTip = document.getElementById("convertedTip");
     const convertedTotal = document.getElementById("convertedTotal");
 
+    //the conversion rates
+    const INR_RATE = 85;
+    const EUR_RATE = 0.95;
+
     //this function updates everything when the user types or moves the slider
     function updateValues() {
         //this grabs the number from the bill input
