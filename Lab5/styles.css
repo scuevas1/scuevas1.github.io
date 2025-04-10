@@ -18,4 +18,5 @@ body {
   /**lighter background so the text pops more**/
   background-color: #FFFFF0; 
   padding: 30px;
+  border-radius: 12px; /**this gives the box rounded corners**/
 }
