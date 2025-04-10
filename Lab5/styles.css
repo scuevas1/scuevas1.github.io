@@ -78,6 +78,6 @@ input[type="range"]::-webkit-slider-thumb {
   height: 20px;
   width: 20px;
   background: #4b7c5b; 
-  border-radius: 50%; /**this will completely round out the circle**/
+  border-radius: 50%; /**this will completely round out and make it a circle**/
   cursor: pointer;
 }
