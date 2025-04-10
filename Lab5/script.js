@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         tipAmount.value = calculatedTip.toFixed(2);
         totalWithTipAndTax.value = finalTotal.toFixed(2);
     }
-
-    }
-
+    //now every time the user types or moves the slider, this updates stuff
+    billInput.addEventListener("input", updateValues);
+    tipSlider.addEventListener("input", updateValues);
 });
