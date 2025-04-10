@@ -27,7 +27,15 @@
             <p><strong>Currency conversion:</strong></p>
             <p>$1 USD = €0.95 EUR for EUROS</p>
             <p>$1 USD = ₹85 INR for Rupees</p>
-            
+
+            <!--this is the dropdown option for the currency conversion-->
+            <label for="currency">Select Currency:</label>
+            <select id="currency">
+                <option value="usd">US Dollars ($)</option>
+                <option value="inr">Indian Rupee (₹)</option>
+                <option value="eur">Euro (€)</option>
+            </select>
+
             <!--this the total bill with the tip and tax included -->
             <label for="totalWithTipAndTax">Total Bill with Tip and Tax ($)</label>
             <input type="text" id="totalWithTipAndTax" disabled/>
