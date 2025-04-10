@@ -77,6 +77,14 @@ document.addEventListener("DOMContentLoaded", () => {
     currencySelect.addEventListener("change", () => {
         const bill = parseFloat(billInput.value);
         const tip = parseFloat(tipSlider.value);
-      
+
+        if (!isNaN(bill) && bill >= 0) {
+            const tipAmount = bill * (tip / 100);
+            const taxAmount = bill * 0.11;
+            const totalFinal = bill + taxAmount + tipAmount;
+
+            updateCurrencyConversion(tipAmount, totalFinal);
         }
+    })
+
 });
