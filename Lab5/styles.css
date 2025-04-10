@@ -42,6 +42,8 @@ input[type="text"], select, input[type="range"] {
   width: 100%;
   padding: 10px;
   font-size: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #91a394; /**testing out colors for border and background**/
   border-radius: 6px;
   margin-bottom: 10px;
 }
