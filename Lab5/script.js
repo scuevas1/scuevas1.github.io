@@ -2,9 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // this grabs the form and all the inputs inside of it
     const billInput = document.getElementById("billTotal");
     const tipSlider = document.getElementById("tipSlider");
-    const tipPercentage = document.getElementById("tipPercentage");
-    const tipAmount = document.getElementById("tipAmount");
-    const totalWithTipAndTax = document.getElementById("totalWithTipAndTax");
+    const totalWithTax = document.getElementById("totalWithTax");
+    const currencySelect = document.getElementById("currency");
+    const convertedTip = document.getElementById("convertedTip");
+    const convertedTotal = document.getElementById("convertedTotal");
 
     //this function updates everything when the user types or moves the slider
     function updateValues() {
