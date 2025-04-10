@@ -18,20 +18,11 @@
             <label for="totalWithTax">Total Bill with Tax (11%):</label>
             <input type="text" id="totalWithTax" disabled />
 
-            <!--this is the slider and the percentage that it shows-->
-            <label for="tipSlider">Tip Percentage:</label>
-            <input type="range" id="tipSlider" min="0" max="100" value="15"/>
-            <input type="text" id="tipPercentage" disabled/>
-
-            <!--this is the tip amount that is calculated from the tip slider-->
-            <label for="tipAmount">Tip Amount ($):</label>
-            <input type="text" id="tipAmount" disabled/>
-
             <!--the currency conversion info for the extra credit-->
             <p><strong>Currency conversion:</strong></p>
             <p>$1 USD = €0.95 EUR for EUROS</p>
             <p>$1 USD = ₹85 INR for Rupees</p>
-
+            
             <!--this is the dropdown option for the currency conversion-->
             <label for="currency">Select Currency:</label>
             <select id="currency">
@@ -40,9 +31,18 @@
                 <option value="eur">Euro (€)</option>
             </select>
 
-            <!--this the total bill with the tip and tax included -->
-            <label for="totalWithTipAndTax">Total Bill with Tip and Tax ($)</label>
-            <input type="text" id="totalWithTipAndTax" disabled/>
+            <!--this is the slider and the percentage that it shows-->
+            <label for="tipSlider">Tip Percentage:</label>
+            <input type="range" id="tipSlider" min="0" max="100" value="15"/>
+            <input type="text" id="tipPercentage" disabled/>
+
+            <!--this is the converted tip amount that is calculated from the tip slider-->
+            <label for="convertedTip">Converted Tip Amount:</label>
+            <input type="text" id="convertedTip" disabled />
+      
+            <!--this is the converted total till with tip and tax-->
+            <label for="convertedTotal">Converted Total Bill with Tip and Tax:</label>
+            <input type="text" id="convertedTotal" disabled />
         </form>
     </div>
 
