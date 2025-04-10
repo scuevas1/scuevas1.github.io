@@ -63,3 +63,11 @@ input[disabled] {
   color: #5c6f63; 
   border-style: dashed;
 }
+
+/**this will add the css for the bar that is behind the slider**/
+input[type="range"] {
+  appearance: none;
+  height: 8px;
+  background: #b8cabb;
+  margin-top: 5px;
+}
