@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //adding in the calculation of the 11% tax
         const tax = bill * 0.11;
+
+        //this is the final calculation of the bill with the tip and taxes included
+        const finalTotal = bill + calculatedTip + tax;
     }
 
 });
