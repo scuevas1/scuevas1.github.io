@@ -19,4 +19,5 @@ body {
   background-color: #FFFFF0; 
   padding: 30px;
   border-radius: 12px; /**this gives the box rounded corners**/
+  box-shadow: 0 4px 16px #000016; /**this gives the box a nice shadow to show some contrast**/
 }
