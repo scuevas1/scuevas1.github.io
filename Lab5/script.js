@@ -38,43 +38,40 @@ document.addEventListener("DOMContentLoaded", () => {
         const tax = bill * 0.11;
 
         //adding the bill and tax amount
-        const totalWithTax = bill + tax;
+        const totalWithTaxs = bill + tax;
 
         //this is the final calculation of the bill with the tip and taxes included
-        const totalWithTipAndTax = totalWithTax + tipAmount;
+        const totalWithTipAndTax = totalWithTaxs + calculatedTip;
 
         //this will show the results of the final total with 2 decimals
-        tipAmount.value = calculatedTip.toFixed(2);
-        totalWithTax.value = totalTaxed.toFixed(2);
-        totalWithTipAndTax.value = finalTotal.toFixed(2);
+        totalWithTax.value = totalWithTaxs.toFixed(2);
 
         //updating the converted fields
-        updateCurrencyConversion(tipAmount, totalWithTipAndTax);    
+        updateCurrencyConversion(calculatedTip, totalWithTipAndTax);    
     }
 
     //the function that handles converting the tip and total when the currency is changed
     function updateCurrencyConversion(tipAmount, totalAmount) {
-        const selected = currencySelect.value;
-        let convertedTipValue = "";
-        let convertedTotalValue = "";
-
-        if (selected === "inr") {
-            convertedTipValue = `₹ ${(tipAmount * INR_RATE).toFixed(2)}`;
-            convertedTotalValue = `₹ ${(finalTotal * INR_RATE).toFixed(2)}`;
-          } else if (selected === "eur") {
-            convertedTipValue = `€ ${(tipAmount * EUR_RATE).toFixed(2)}`;
-            convertedTotalValue = `€ ${(finalTotal * EUR_RATE).toFixed(2)}`;
-          } else {
-            convertedTipValue = `$ ${tipAmount.toFixed(2)}`;
-            convertedTotalValue = `$ ${finalTotal.toFixed(2)}`;
-          }
-        convertedTip.value = convertedTipValue;
-        convertedTotal.value = convertedTotalValue;
-    }
-
-    //now every time the user types or moves the slider, this updates stuff
+        const currency = currencySelect.value;
+        let convertedTipText = "";
+        let convertedTotalText = "";
+      
+        if (currency === "inr") {
+          convertedTipText = `₹ ${(tipAmount * INR_RATE).toFixed(2)}`;
+          convertedTotalText = `₹ ${(totalAmount * INR_RATE).toFixed(2)}`;
+        } else if (currency === "eur") {
+          convertedTipText = `€ ${(tipAmount * EUR_RATE).toFixed(2)}`;
+          convertedTotalText = `€ ${(totalAmount * EUR_RATE).toFixed(2)}`;
+        } else {
+          convertedTipText = `$ ${tipAmount.toFixed(2)}`;
+          convertedTotalText = `$ ${totalAmount.toFixed(2)}`;
+        }
+      
+        convertedTip.value = convertedTipText;
+        convertedTotal.value = convertedTotalText;
+      }
+//now every time the user types or moves the slider, this updates stuff
 billInput.addEventListener("input", updateValues);
 tipSlider.addEventListener("input", updateValues);
 currencySelect.addEventListener("change", updateValues);
-
 });
