@@ -21,3 +21,10 @@ body {
   border-radius: 12px; /**this gives the box rounded corners**/
   box-shadow: 0 4px 16px #000016; /**this gives the box a nice shadow to show some contrast**/
 }
+
+h1 {
+  font-size: 1.8rem;
+  color: #1d3623; 
+  margin-bottom: 20px;
+  text-align: center;
+}
