@@ -50,9 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
         //updating the converted fields
         updateCurrencyConversion(tipAmount, totalFinal);
     }
-    //now every time the user types or moves the slider, this updates stuff
-    billInput.addEventListener("input", updateValues);
-    tipSlider.addEventListener("input", updateValues);
 
     //the function that handles converting the tip and total when the currency is changed
     function updateCurrencyConversion(tipAmount, totalFinal) {
@@ -73,4 +70,13 @@ document.addEventListener("DOMContentLoaded", () => {
         convertedTip.value = convertedTipValue;
         convertedTotal.value = convertedTotalValue;
     }
+
+    //now every time the user types or moves the slider, this updates stuff
+    billInput.addEventListener("input", updateValues);
+    tipSlider.addEventListener("input", updateValues);
+    currencySelect.addEventListener("change", () => {
+        const bill = parseFloat(billInput.value);
+        const tip = parseFloat(tipSlider.value);
+      
+        }
 });
