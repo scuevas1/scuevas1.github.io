@@ -10,3 +10,12 @@ body {
   padding: 20px;
   color: #1d3623; 
 }
+
+/**this is the css for the container that holds the form**/
+.container {
+  max-width: 480px;
+  margin: 0 auto; 
+  /**lighter background so the text pops more**/
+  background-color: #FFFFF0; 
+  padding: 30px;
+}
