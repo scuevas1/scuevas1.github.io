@@ -81,3 +81,11 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%; /**this will completely round out and make it a circle**/
   cursor: pointer;
 }
+
+/**adding in the color of the error message to stand out**/
+.error-message {
+  color: #b22222; 
+  font-size: 0.95rem;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}

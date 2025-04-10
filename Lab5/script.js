@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const currencySelect = document.getElementById("currency");
     const convertedTip = document.getElementById("convertedTip");
     const convertedTotal = document.getElementById("convertedTotal");
+    const billError = document.getElementById("billError");
 
     //the conversion rates
     const INR_RATE = 85;
@@ -20,11 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //this checks if it is a real number and not a negative one
         if (isNaN(bill) || bill < 0) {
+            billError.textContent = "Please enter a valid number greater than or equal to 0.";
             tipPercentage.value = "";
             totalWithTax.value = "";
             convertedTip.value = "";
             convertedTotal.value = "";
             return;
+        } else {
+            billError.textContent = "";
         }
 
         //once we know that the number is real we move on
@@ -63,8 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
           convertedTipText = `€ ${(tipAmount * EUR_RATE).toFixed(2)}`;
           convertedTotalText = `€ ${(totalAmount * EUR_RATE).toFixed(2)}`;
         } else {
-          convertedTipText = `$ ${tipAmount.toFixed(2)}`;
-          convertedTotalText = `$ ${totalAmount.toFixed(2)}`;
+          convertedTipText = "";
+          convertedTotalText = "";
         }
       
         convertedTip.value = convertedTipText;
