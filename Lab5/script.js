@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
+        //once we know that the number is real we move on
+        //now we update the tip percent box
+        tipPercentage.value=`${tip}%`;
+
+
     }
 
 });
