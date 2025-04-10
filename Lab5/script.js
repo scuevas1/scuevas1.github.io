@@ -36,11 +36,15 @@ document.addEventListener("DOMContentLoaded", () => {
         //adding in the calculation of the 11% tax
         const tax = bill * 0.11;
 
+        //adding the bill and tax amount
+        const totalTaxed = bill + tax;
+
         //this is the final calculation of the bill with the tip and taxes included
         const finalTotal = bill + calculatedTip + tax;
 
         //this will show the results of the final total with 2 decimals
         tipAmount.value = calculatedTip.toFixed(2);
+        totalWithTax.value = totalTaxed.toFixed(2);
         totalWithTipAndTax.value = finalTotal.toFixed(2);
     }
     //now every time the user types or moves the slider, this updates stuff
