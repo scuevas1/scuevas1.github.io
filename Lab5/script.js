@@ -12,6 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const bill = parseFloat(billInput.value);
         const tip = parseFloat(tipSlider.value);
 
+        //this checks if it is a real number and not a negative one
+        if (isNaN(bill) || bill < 0) {
+            tipPercentage.value = "";
+            tipAmount.value = "";
+            totalWithTipAndTax.value = "";
+            return;
+        }
+
     }
 
 });
