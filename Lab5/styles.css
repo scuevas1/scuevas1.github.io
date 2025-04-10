@@ -49,3 +49,10 @@ input[type="text"], select, input[type="range"] {
   color: #1d3623; 
   transition: border-color 0.2s; /**trying this out so that it makes the focus smoother**/
 }
+
+/**this makes the border turn a darker shade of green when clicked**/
+input[type="text"]:focus,
+select:focus {
+  border-color: #4b7c5b; 
+  outline: none;
+}
