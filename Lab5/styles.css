@@ -46,4 +46,6 @@ input[type="text"], select, input[type="range"] {
   border: 1px solid #91a394; /**testing out colors for border and background**/
   border-radius: 6px;
   margin-bottom: 10px;
+  color: #1d3623; 
+  transition: border-color 0.2s; /**trying this out so that it makes the focus smoother**/
 }
