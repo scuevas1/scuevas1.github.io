@@ -32,6 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //this is the final calculation of the bill with the tip and taxes included
         const finalTotal = bill + calculatedTip + tax;
+
+        //this will show the results of the final total with 2 decimals
+        tipAmount.value = calculatedTip.toFixed(2);
+        totalWithTipAndTax.value = finalTotal.toFixed(2);
+    }
+
     }
 
 });
