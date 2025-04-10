@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
         //now we update the tip percent box
         tipPercentage.value=`${tip}%`;
 
-
+        //adding in the calculation of the tip amount
+        const calculatedTip = bill * (tip / 100);
     }
 
 });
