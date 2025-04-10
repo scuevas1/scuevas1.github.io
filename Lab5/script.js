@@ -59,5 +59,18 @@ document.addEventListener("DOMContentLoaded", () => {
         const selected = currencySelect.value;
         let convertedTipValue = "";
         let convertedTotalValue = "";
+
+        if (selected === "inr") {
+            convertedTipValue = `₹ ${(tipAmount * INR_RATE).toFixed(2)}`;
+            convertedTotalValue = `₹ ${(totalFinal * INR_RATE).toFixed(2)}`;
+          } else if (selected === "eur") {
+            convertedTipValue = `€ ${(tipAmount * EUR_RATE).toFixed(2)}`;
+            convertedTotalValue = `€ ${(totalFinal * EUR_RATE).toFixed(2)}`;
+          } else {
+            convertedTipValue = `$ ${tipAmount.toFixed(2)}`;
+            convertedTotalValue = `$ ${totalFinal.toFixed(2)}`;
+          }
+        convertedTip.value = convertedTipValue;
+        convertedTotal.value = convertedTotalValue;
     }
 });
