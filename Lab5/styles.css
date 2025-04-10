@@ -36,3 +36,12 @@ label {
   font-weight: bold;
   color: #2b4b37; 
 }
+
+/**the css for the input boxes, dropdown, and slider**/
+input[type="text"], select, input[type="range"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
