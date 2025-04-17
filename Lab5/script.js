@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //this checks if it is a real number and not a negative one
         if (isNaN(bill) || bill < 0) {
-            billError.textContent = "Please enter a valid number greater than or equal to 0.";
+            billError.textContent = "Please enter a number greater than or equal to 0.";
             tipPercentage.value = "";
             totalWithTax.value = "";
             convertedTip.value = "";
