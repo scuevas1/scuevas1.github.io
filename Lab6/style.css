@@ -54,3 +54,14 @@ button, select {
     color: #5c3b1a;
     font-family: inherit;
 }
+
+button {
+    background-color: #f7b267;
+    cursor: pointer;
+    font-weight: bold;
+}
+  
+button:hover {
+    background-color: #f5974e;
+    color: white;
+}
