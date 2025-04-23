@@ -28,11 +28,22 @@
                 <option value="48.8566,2.3522">Paris, France</option>
                 <option value="18.0816,-66.9485">San Germán, PR</option>
                 <option value="51.5074,-0.1278">London, UK</option> 
+                <button id="getDataBtn">🔍 Get Sunrise & Sunset</button>
             </select>
+        </section>
+
+        <section id="dashboard">
+            <div id="errorMsg"></div>
+
+            <div id="resultsContainer">
+                <div class="placeholder">
+                    <p>☀️ Select a city to begin your sunrise adventure!</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-
+        <p>Data courtesy of <a href="https://sunrisesunset.io/" target="_blank">sunrisesunset.io</a></p>
     </footer>
     <script src="script.js"></script>
 </body>
