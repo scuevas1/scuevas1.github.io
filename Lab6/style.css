@@ -89,3 +89,21 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2em;
 }
+
+.result-card {
+    background: 'paper.png', #fff;
+    background-blend-mode: multiply;
+    border: 2px solid #f7c59f;
+    border-radius: 10px;
+    padding: 1.5em;
+    box-shadow: 6px 6px 12px rgba(0,0,0,0.05);
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease;
+    font-size: 0.95em;
+    position: relative;
+    animation: fadeInUp 0.6s ease;
+}
+  
+  .result-card:hover {
+    transform: rotate(0deg) scale(1.02);
+}
