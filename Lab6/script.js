@@ -17,4 +17,18 @@ getDataBtn.addEventListener('click', async () => {
 
     //this will split the selected location's lat and long values
     const [lat, lng] = locationValue.split(',');
+
+    try {
+        //this will grab sunrise/sunset data for today and tomorrow
+        const todayData = await fetchData(lat, lng, 'today');
+        const tomorrowData = await fetchData(lat, lng, 'tomorrow');
+    
+        //then it will display the results using a helper function
+        displayResults(todayData, 'Today');
+        displayResults(tomorrowData, 'Tomorrow');
+      } catch (err) {
+        //if something goes wrong it will show an error message
+        errorMsg.textContent = 'Failed to load data. Please try again.';
+        console.error(err);
+    }
 });  
