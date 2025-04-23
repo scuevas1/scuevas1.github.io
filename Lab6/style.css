@@ -65,3 +65,15 @@ button:hover {
     background-color: #f5974e;
     color: white;
 }
+
+#dashboard {
+    margin-top: 2em;
+}
+  
+#errorMsg {
+    color: #c0392b;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+  
