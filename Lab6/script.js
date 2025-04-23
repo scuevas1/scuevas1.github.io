@@ -14,4 +14,7 @@ getDataBtn.addEventListener('click', async () => {
         errorMsg.textContent = 'Please select a location.';
         return;
     }
+
+    //this will split the selected location's lat and long values
+    const [lat, lng] = locationValue.split(',');
 });  
