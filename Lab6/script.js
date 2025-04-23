@@ -32,3 +32,14 @@ getDataBtn.addEventListener('click', async () => {
         console.error(err);
     }
 });  
+
+//this function makes a request to the API and returns the results
+async function fetchData(lat, lng, date) {
+    const res = await fetch(`https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}&date=${date}`);
+    const data = await res.json();
+  
+    //if the API doesn't return a correct response it will throw an error message
+    if (!res.ok || data.status !== 'OK') throw new Error('API Error');
+  
+    return data.results;
+}
