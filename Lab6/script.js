@@ -43,3 +43,24 @@ async function fetchData(lat, lng, date) {
   
     return data.results;
 }
+
+// This function builds a card with the returned data and adds it to the page
+function displayResults(data, label) {
+    const card = document.createElement('div');
+    card.className = 'result-card';
+  
+    // Create the card's inner HTML using the API data
+    card.innerHTML = `
+      <h3>${label}'s Data</h3>
+      <p><strong>Sunrise:</strong> ${data.sunrise}</p>
+      <p><strong>Sunset:</strong> ${data.sunset}</p>
+      <p><strong>Dawn:</strong> ${data.dawn}</p>
+      <p><strong>Dusk:</strong> ${data.dusk}</p>
+      <p><strong>Day Length:</strong> ${data.day_length}</p>
+      <p><strong>Solar Noon:</strong> ${data.solar_noon}</p>
+      <p><strong>Time Zone:</strong> ${data.timezone}</p>
+    `;
+  
+    // Append the card to the results container
+    resultsContainer.appendChild(card);
+}
