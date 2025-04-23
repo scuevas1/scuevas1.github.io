@@ -6,4 +6,12 @@ const errorMsg = document.getElementById('errorMsg');
 //adding an event listener to the button so we grab the data when it's clicked
 getDataBtn.addEventListener('click', async () => {
     const locationValue = locationSelect.value;
+    errorMsg.textContent = '';
+    resultsContainer.innerHTML = '';
+
+    //if no location is selected, this will show an error and stop
+    if (!locationValue) {
+        errorMsg.textContent = 'Please select a location.';
+        return;
+    }
 });  
